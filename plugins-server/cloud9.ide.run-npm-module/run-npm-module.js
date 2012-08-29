@@ -171,6 +171,7 @@ util.inherits(NpmRuntimePlugin, Plugin);
             
             var shellAliases =
                 "python() { if [ $# -eq 0 ]; then command python -i; else command python -i \"$@\"; fi; };" +
+                "coffee() { if [ $# -eq 0 ]; then command coffee -i; else command coffee -i \"$@\"; fi; };" +
                 "irb() { command irb --readline \"$@\"; };" +
                 "node() {" +
                 "  if [ $# -eq 0 ]; then" +
